@@ -21,3 +21,10 @@ Have you ever had a webserice URL that simply won't play nice with the server he
 1.  You need to update the ssl_app-w32r-XX-X.exe in the script to the version on your server.  This application is in the D:\i3\ic\server directory
 2.  You run the script with the URL as the first parameter:  certs.psl https://url.for.your.webservice
 3.  The script then generates the hash.0 files from the PEM files needed for SOAP/REST webservices on your PureConnect environment.
+
+**Get_DNIS.ps1
+
+Retreive a list of all DNIS values configured in attendant via the registry.
+
+1. Run the script with your primary IC server as the firt parameter:  Get_DNIS.ps1 cicserver01
+2. Spits out a DNIS.txt file in the execution director that tells you what profile the DNIS is associated with, as well.
